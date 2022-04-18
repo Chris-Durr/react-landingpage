@@ -10,7 +10,7 @@ const Home = () => {
 		<div>
 			<Navbar />
 			<Header />
-			<div className="d-flex justify-content-center">
+			<div id="cajita" className="d-flex justify-content-center">
 				<Post url="https://i.pinimg.com/originals/19/80/34/198034b0276ec4242dc003c13d328e9e.jpg" />
 				<Post url="https://i.pinimg.com/originals/c9/57/82/c95782e79c46a5fabed34f6cd809f8ae.jpg" />
 				<Post url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTV5RKjkKiDMTS4OcWr_GTK6O1WXu2UiARlt5JJ5aI9XAS85G_8GdZnraeGH8DMUEG2Pc&usqp=CAU" />
@@ -119,7 +119,7 @@ const Header = () => {
 /*Post*/
 const Post = (props) => {
 	return (
-		<div className="card" >
+		<div className="card p-3 align-self-end">
 			<img src={props.url} />
 			<div className="card-body">
 				<h5 className="card-title">{props.titulo}</h5>
